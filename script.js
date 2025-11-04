@@ -48,13 +48,27 @@ window.addEventListener('load', () => {
   }
 });
 
-document.getElementById("Brochure").addEventListener("click", function () {
-  const link = document.createElement("a");
-  link.href = "BROCHURE GYT PROYECTOS 2025.pdf"; // Ruta del PDF
-  link.download = "BROCHURE GYT PROYECTOS 2025.pdf"; // Nombre del archivo descargado
-  link.click();
-});
+ const form = document.getElementById("contactForm");
+  const successModal = document.getElementById("successModal");
 
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    const formData = new FormData(form);
+    fetch(form.action, {
+      method: form.method,
+      body: formData,
+    }).then(() => {
+      form.reset();
+
+      successModal.style.display = "flex"; // Mostrar modal
+      
+      // Ocultar automáticamente después de 3 segundos
+      setTimeout(() => {
+        successModal.style.display = "none";
+      }, 3000);
+    });
+  });
 
 
 

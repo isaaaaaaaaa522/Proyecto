@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/LOGO CIRCULAR (1).png" type="image/x-icon" width="36" height="36">
     <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Page</title>
+    <title>GYT Proyectos</title>
 </head>
 <body>
-   
- 
-
-      
-     
       
         <header class="navbar">
             <div class="logo">
@@ -76,11 +72,8 @@
     <div class="mvv-card">
       <h3>Visión</h3>
       <p>
-       Sabemos	que existimos	para	realizar
-       excelentes  proyectos  y  ser  reconocidos como empresa líder en gestión y desarrollo de proyectos inmobiliarios.
-
-
-
+       Sabemos	que existimos	para	realizar excelentes  proyectos  y  ser  reconocidos como empresa líder en gestión 
+       y desarrollo de proyectos inmobiliarios.
       </p>
     </div>
 
@@ -112,7 +105,7 @@
 
   <div class="text-side">
     <h2>
-      <span class="big">¿Por qué</span><br>
+      <span class="big ">¿Por qué</span><br>
       <span class="highlight">elegirnos?</span>
     </h2>
     <p>
@@ -124,7 +117,7 @@ nuestros clientes, mejorando los procesos en la ejecución de proyectos.
 
 <h1 class="socios">NUESTROS SOCIOS</h1>
 
-<div class="swiper mySwiper">
+<!-- <div class="swiper mySwiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><img src="img/saveb.jpeg"" alt=""></div>
     <div class="swiper-slide"><img src="img/castañeda.jpeg" alt=""></div>
@@ -139,26 +132,10 @@ nuestros clientes, mejorando los procesos en la ejecución de proyectos.
     <div class="swiper-slide"><img src="img/calsa.jpeg" alt=""></div>
     <div class="swiper-slide"><img src="img/r.jpeg" alt=""></div>
        <div class="swiper-slide"><img src="img/saveb.jpeg"" alt=""></div>
-    <div class="swiper-slide"><img src="img/castañeda.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/solvae.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/villa.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/calsa.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/r.jpeg" alt=""></div>
-       <div class="swiper-slide"><img src="img/saveb.jpeg"" alt=""></div>
-    <div class="swiper-slide"><img src="img/castañeda.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/solvae.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/villa.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/calsa.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/r.jpeg" alt=""></div>
-       <div class="swiper-slide"><img src="img/saveb.jpeg"" alt=""></div>
-    <div class="swiper-slide"><img src="img/castañeda.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/solvae.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/villa.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/calsa.jpeg" alt=""></div>
-    <div class="swiper-slide"><img src="img/r.jpeg" alt=""></div>
+ 
    
   </div>
-</div>
+</div> -->
 
 
 <section class="principal">
@@ -182,13 +159,52 @@ Contáctanos</strong></p>
    
 
   
-      <form class="contact-form">
-  <input type="text" id="name" name="name" placeholder="Your Name" required>
-  <input type="email" id="email" name="email" placeholder="Your Email" required>
+  <form action="https://formsubmit.co/contactosgytproyectos@gmail.com" method="POST" class="contact-form" id="contactForm">
+      <input type="hidden" name="_captcha" value="false">
+  <input type="text" id="name" name="name" placeholder="Your Name" required> 
   <textarea id="message" name="message" placeholder="Message" rows="10" required></textarea>
   <button type="submit">Enviar</button>
 </form>
-    
+
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <p>✅ ¡Mensaje enviado con éxito!</p>
+  </div>
+</div>
+
+<style>
+  /* Estilo del modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  .modal-content {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    animation: popIn 0.3s ease-out;
+  }
+
+  @keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+<
 
   </div>
 
@@ -236,9 +252,13 @@ Contáctanos</strong></p>
 
     <!-- 4. Libro de Reclamaciones -->
     <div class="footer-btn">
-      
-     <a href="#" class="reclamaciones-btn"><i class="fas fa-book-open"></i></a>
-     <h3>Libro de Reclamaciones</h3>
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdgMY1SQYoxgqrlxksJHAwWAVPzIQntQE5HKfCEFDWR1rMcQA/viewform?usp=dialog" 
+     class="reclamaciones-btn" target="_blank" rel="noopener noreferrer">
+    
+     <i class="fas fa-book-open"></i>
+     <h3>Libro de Reclamaciones</h3></a>
+
+
     </div>
 
   </div>

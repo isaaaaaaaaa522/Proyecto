@@ -905,19 +905,28 @@ display: inline-block;
 
 footer .footer-btn{
   display: flex;
+  align-items: center;
   flex-direction: column; 
   gap: 15px; 
   width: 150px;
+
 } 
 
-.footer-btn h3{
+.footer-btn a h3{
+  font-size: 18px;
   text-align: center;
    position: relative;
   display: inline-block;
 
 }
 
-.footer-btn h3::after {
+.footer-btn a i{
+  margin-left: 20px;
+ 
+
+}
+
+.footer-btn a h3::after {
   content: "";
   position: absolute;
   left: 0;
@@ -931,7 +940,7 @@ footer .footer-btn{
   transition: transform 0.35s ease;
 }
 
- .footer-btn h3:hover::after {
+ .footer-btn a h3:hover::after {
   transform: scaleX(1);
 }
 
