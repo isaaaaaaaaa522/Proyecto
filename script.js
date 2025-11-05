@@ -70,6 +70,15 @@ window.addEventListener('load', () => {
     });
   });
 
+  document.getElementById('Brochure').addEventListener('click', function () {
+    const link = document.createElement('a');
+    link.href = 'BROCHURE GYT PROYECTOS 2025.pdf'; // Ruta del PDF
+    link.download = 'BROCHURE GYT PROYECTOS 2025.pdf';  // Nombre del archivo al descargar
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+
 
 
 
